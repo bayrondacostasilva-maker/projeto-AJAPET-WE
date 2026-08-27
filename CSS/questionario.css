@@ -2,16 +2,11 @@
    CONFIGURAÇÕES GERAIS
 ========================= */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     background: #f7f7f7;
-    color: #030202;
+    color: var(--color-black);
     min-height: 100vh;
     display: flex;
     flex-direction: column;

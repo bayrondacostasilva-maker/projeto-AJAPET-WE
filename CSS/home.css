@@ -1,33 +1,35 @@
-:root{
-    --color-white : #fff;;
-    --color-reddark: #920b0b;
-    --color-black : #030202;
-}
-
-
-
 
 header {
-    /* deixar a barra de navegação no topo ao rolar a página */
+    /* Mantém o header fixo no topo */
     position: fixed;
     top: 0;
 
+    /* Divide o header em partes */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: var(--color-white);
+
     width: 91.5em;
+    height: 6rem;
+
+    padding: 1rem;
     margin: 0.5rem;
-    border-radius: 20px;
+
+    background-color: var(--color-white);
+
     border: 2.5px solid var(--color-reddark);
-    p{
-        margin-left: 0.5rem;
-    }
+    border-radius: 20px;
 }
 
+header p {
+    margin-left: 0.5rem;
+}
+
+/* Logo */
 #header-main {
-    height: 5rem;
+    display: flex;
+    align-items: center;
+
     color: var(--color-reddark);
 }
 
@@ -36,53 +38,50 @@ header {
     height: 56px;
 }
 
-
+/* Navegação */
 #nav-main {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
     display: flex;
     align-items: center;
-    gap: 1rem;
-    font-size: 1.2rem;
-}
-
-#nav-main a {
-    text-decoration: none;
-    color: var(--color-reddark);
-    font-size: 1.2em;
-    
 }
 
 #nav-main ol {
     display: flex;
+    align-items: center;
+
+    gap: 5rem;
+
     margin: 0;
     padding: 0;
+
     list-style: none;
-    gap: 5rem;
 }
 
-#nav-main ul {
-    padding: 0;
+#nav-main a {
+    color: var(--color-reddark);
+
+    font-size: 1.2rem;
+
+    text-decoration: none;
 }
 
+/* Botões */
+#nav-button {
+    display: flex;
+    gap: 0.5rem;
+}
 
 #nav-button button {
-    height: 2rem;
     width: 5rem;
-    background-color: #fff;
+    height: 2rem;
+
+    background-color: var(--color-white);
     color: var(--color-reddark);
+
+    border: 2px solid var(--color-reddark);
     border-radius: 0.4rem;
-    border: none;
-    border:  solid 2px;
 }
 
 #nav-button #button1 {
-    height: 2rem;
-    width: 5rem;
-    border-radius: 0.4rem;
-    border: none;
-    background-color: #920b0b;
-    color: #fff;
+    background-color: var(--color-reddark);
+    color: var(--color-white);
 }

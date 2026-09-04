@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root{
-    --color-white : #fff;;
-    --color-reddark: #920b0b;
-    --color-black : #030202;
-}
+:root {
+  --color-red-dark: #7F1515;
+    --color-red: #B91C1C;
+    --color-red-light: #D83232;
 
+    --color-black: #111111;
+    --color-gray-dark: #333333;
+    --color-gray: #666666;
+    --color-gray-light: #F2F2F2;
+
+    --color-white: #FFFFFF;
+    --color-white-marrom: #f8eee5;
+    --color-yellou : #f4c95d; 
+}
 
 
 *{
 
     box-sizing: border-box; 
+    margin: 0;
 }
-body{
+main{
     height: 100vh;
     width: 100%;
 }

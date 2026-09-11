@@ -4,12 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="CSS/style.css">
+    <title>AJ.APET — Questionário</title>
     <link rel="stylesheet" href="../CSS/questionario.css">
-    <title>Questionario</title>
+    <link rel="shortcut icon" href="../assets/imagens/icon.png" type="image/x-icon">
 </head>
 
 <body>
+    <header>
+        <div id="header-main">
+            <img src="../assets/imagens/AJ.APET-LOGO3.png" alt="logo">
+        </div>
+        <nav id="nav-main">
+            <ol>
+                <ul><a href="../index.html">Home</a></ul>
+                <ul><a href="index.html">Questionario</a></ul>
+                <ul><a href="#">Cuidados</a></ul>
+                <ul><a href="#">Sobre</a></ul>
+            </ol>
+        </nav>
+        <div class="nav-button">
+            <button>Entrar</button>
+            <button class="button1">cadastar</button>
+        </div>
+    </header>
+
     <main>
         <section class="questionario">
 
@@ -22,6 +40,7 @@
             <form id="form-questionario">
                 <label for="nome-tutor">Seu nome:</label>
                 <input type="text" id="nome-tutor" name="nome-tutor" required>
+
                 <label for="tipo-animal">Tipo de animal:</label>
                 <select id="tipo-animal" name="tipo-animal" required>
                     <option value="">Selecione</option>
@@ -29,10 +48,13 @@
                     <option value="gato">Gato</option>
                     <option value="outro">Outro</option>
                 </select>
+
                 <label for="nome-pet">Nome do pet:</label>
                 <input type="text" id="nome-pet" name="nome-pet" required>
+
                 <label for="idade-pet">Idade do pet (anos):</label>
                 <input type="number" id="idade-pet" name="idade-pet" min="0" required>
+
                 <label for="porte">Porte:</label>
                 <select id="porte" name="porte" required>
                     <option value="">Selecione</option>
@@ -40,38 +62,45 @@
                     <option value="medio">Médio</option>
                     <option value="grande">Grande</option>
                 </select>
+
                 <fieldset>
                     <legend>Está com a vacinação em dia?</legend>
                     <label><input type="radio" name="vacinado" value="sim" required> Sim</label>
                     <label><input type="radio" name="vacinado" value="nao"> Não</label>
                     <label><input type="radio" name="vacinado" value="nao-sei"> Não sei</label>
                 </fieldset>
+
                 <fieldset>
                     <legend>Já é castrado(a)?</legend>
                     <label><input type="radio" name="castrado" value="sim" required> Sim</label>
                     <label><input type="radio" name="castrado" value="nao"> Não</label>
                 </fieldset>
-                <label for="alimentacao">Como é a alimentação
-                    atual?</label>
+
+                <label for="alimentacao">Como é a alimentação atual?</label>
                 <select id="alimentacao" name="alimentacao" required>
                     <option value="">Selecione</option>
                     <option value="racao">Ração</option>
                     <option value="caseira">Comida caseira</option>
                     <option value="mista">Mista</option>
                 </select>
-                <label for="observacoes">Alguma observação ou
-                    dificuldade que você tem com o cuidado do seu pet?</label>
+
+                <label for="observacoes">Alguma observação ou dificuldade que você tem com o cuidado do seu
+                    pet?</label>
                 <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+
                 <button type="submit">Enviar</button>
             </form>
+
             <div id="resultado-questionario" class="resultado" hidden></div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 AJA-PET — Instituto Federal do Maranhão, Campus
-            Grajaú</p>
+        <p>&copy; 2026 AJA-PET — Instituto Federal do Maranhão, Campus Grajaú</p>
+        <img src="../assets/imagens/rabo.png" alt="Rabo">
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>

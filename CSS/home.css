@@ -81,31 +81,47 @@ header button {
 
 #secaodeadocao {
     position: relative;
+    max-width: 1280px;
+    width: 100%;
     z-index: 1;
-    overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: var(--color-red);
+    align-items: flex-end;
     height: 46rem;
+    padding: 0 2rem ;
+    min-height: 100vh;
+}
+#fundo {
+    position: absolute;
+    width: 70rem;
+    height: 56rem;
+    right: 0;
 }
 
-img {
-    height: 576px;
-    position: relative;
-    z-index: 2;
-    top: 5.1rem;
+
+#centersection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-color: var(--color-red);
 }
+
+#gatofundo {
+
+    width: 50%;
+    z-index: 2;
+}
+
 #gatopequeno{
+    top: 6rem;
     position: absolute;
     z-index: 3;
-    height: 300px;
+    height: 247px;
 }
 
 
 #texto {
-    width: 90rem;
-    height: 28rem;
     margin-top: 4rem;
     position: relative;
     z-index: 1;
@@ -113,13 +129,11 @@ img {
     h1 {
         font-size: 103px;
         line-height: 0.9;
-        margin-left: 5rem;
         color: var(--color-white);
     }
 
     p {
         font-size: 30px;
-        margin-left: 5rem;
         margin-top: 1.1rem;
         color: var(--color-white);
     }
@@ -154,27 +168,6 @@ img {
     color: var(--color-yellou);
 }
 
-#fundo {
-    position: absolute;
-    width: 67rem;
-    height: 56rem;
-    z-index: 0;
-    left: 34rem;
-}
-
-.onda {
-    position: absolute;
-
-    width: 100%;
-    height: 18rem;
-    border-radius: 20% 40%;
-    right: 63%;
-    margin-top: 40%;
-
-    background-color:var( --color-red-claro);
-
-    z-index: 0;
-}
 
 #section-card {
      background-color: var(--color-red);

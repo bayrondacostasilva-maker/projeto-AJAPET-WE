@@ -93,23 +93,23 @@ header button {
 }
 #fundo {
     position: absolute;
-    width: 70rem;
-    height: 56rem;
-    right: 0;
+    right: -179px;
+    top: 156px;
 }
 
 
-#centersection{
+.centersection{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
      background-color: var(--color-red);
+    overflow: hidden
 }
 
 #gatofundo {
 
-    width: 50%;
+    width: 70%;
     z-index: 2;
 }
 
@@ -179,27 +179,6 @@ header button {
    
 }
 
-.card{
-    height: 35.5rem;
-    width: 23.5rem;
-    overflow: hidden;
-    border-radius: 20px;
-}
-.dicaimg{
-    top: -1px;
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-   
-}
-
-.textocard{
-    margin: 1rem;
-    background-color: var(--color-white);
-    p{
-        margin: 3px;
-    }
-}
 
 
 #section-qstr{
@@ -220,4 +199,32 @@ footer{
         height: 270px;
         top: 0px;
     }
+}
+
+
+#section-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    align-items: flex-end;
+    border-radius: 40px;
+    background-color: rgb(25, 93, 171);
+    height: 500px;
+    width: 412px;
+    overflow: hidden;
+}
+
+.card-texto{
+    border-radius: 40px;
+    background-color: black;
+    height: 17.6rem;
+    width: 100%;
+    color: var(--color-white);
+}
+
+ #gato{
+    background-image: url(../assets/imagens/dicadecuidado2.jpg);
 }

@@ -174,7 +174,7 @@ header button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 42rem;
+    height: 46rem;
     gap: 100px;
    
 }
@@ -202,29 +202,150 @@ footer{
 }
 
 
-#section-card{
+#section-card {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-}
 
-.card{
-    display: flex;
-    align-items: flex-end;
-    border-radius: 40px;
-    background-color: rgb(25, 93, 171);
-    height: 500px;
-    width: 412px;
+    width: 100%;
+    min-height: 46rem;
+
+    padding: 4rem 5rem;
+
+    gap: 4rem;
+
+    background-image:
+        linear-gradient(
+            rgba(170, 0, 0, 0.82),
+            rgba(170, 0, 0, 0.82)
+        ),
+        url("../assets/imagens/gato-fundo-branco.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     overflow: hidden;
 }
 
-.card-texto{
-    border-radius: 40px;
-    background-color: black;
-    height: 17.6rem;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 350px;
+    min-width: 350px;
+}
+
+
+.card-texto {
+    display: flex;
+    flex-direction: column;
+
     width: 100%;
+    min-height: 270px;
+
+    padding: 1.8rem;
+
+    background-color: rgba(255, 255, 255, 0.97);
+
+    color: #333;
+
+    border-radius: 0 0 30px 30px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
+}
+
+
+/* TÍTULO DO CARTÃO */
+
+.card-texto h3 {
+    margin: 0 0 1rem;
+
+    font-size: 1.35rem;
+    line-height: 1.2;
+
+    color: var(--color-red-dark);
+}
+
+
+/* TEXTO DO CARTÃO */
+
+.card-texto p {
+    margin: 0;
+
+    font-size: 1rem;
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.buttomdica {
+    width: 100%;
+    height: 2.8rem;
+
+    margin-top: auto;
+
+    border: 2px solid var(--color-yellou);
+    border-radius: 10px;
+
+    background-color: var(--color-red-dark);
+    color: var(--color-white);
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.buttomdica:hover {
+    transform: translateY(-2px);
+}
+
+
+
+#textocuidado {
+    width: 430px;
+
+    margin-top: 0;
+}
+
+
+
+
+#textocuidado h2 {
+    margin: 0;
+
+    font-size: 4.5rem;
+    line-height: 0.95;
+
     color: var(--color-white);
 }
 
- #gato{
-    background-image: url(../assets/imagens/dicadecuidado2.jpg);
+
+
+
+#textocuidado h2 span {
+    color: var(--color-yellou);
 }
+
+#textocuidado p {
+    margin-top: 1.5rem;
+
+    font-size: 1.05rem;
+    line-height: 1.6;
+
+    color: var(--color-white);
+}
+
+
+

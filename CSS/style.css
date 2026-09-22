@@ -1,17 +1,31 @@
-:root { 
-    --color-red-dark: #7F1515; 
-    --color-red: #B91C1C; 
-    --color-red-light: #D83232;  
-    --color-red-claro: #d92b2b; 
- 
-    --color-black: #111111; 
-    --color-gray-dark: #333333; 
-    --color-gray: #666666; 
-    --color-gray-light: #F2F2F2; 
- 
-    --color-white: #FFFFFF; 
-    --color-white-marrom: #f8eee5; 
-    --color-yellou : #f4c95d;  
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    /* =========================
+       CORES PRINCIPAIS
+    ========================= */
+
+    --color-red-dark: #7F1515;
+    --color-red: #B91C1C;
+    --color-red-light: #D83232;
+    --color-red-claro: #D92B2B;
+
+    /* =========================
+       CORES NEUTRAS
+    ========================= */
+
+    --color-black: #111111;
+    --color-gray-dark: #333333;
+    --color-gray: #666666;
+    --color-gray-light: #F2F2F2;
+
+    --color-white: #FFFFFF;
+    --color-white-marrom: #F8EEE5;
+
+    /* =========================
+       COR DE DESTAQUE
+    ========================= */
+
+    --color-yellou: #F4C95D;
 } 
 
 header {
@@ -29,14 +43,14 @@ header {
 }
 
 header button {
-    width: 5rem;
+    width: 6rem;
     height: 2rem;
 
     background-color: var(--color-white);
     color: var(--color-red-dark);
 
     border: 2px solid var(--color-red-dark);
-    border-radius: 0.4rem;
+    border-radius: 40px;
 }
 
 .button1 {
@@ -101,11 +115,12 @@ header button {
 /* =========================
    RESET
 ========================= */
-
-*{ 
-    box-sizing: border-box;  
-    margin: 0; 
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
+
 
 
 /* =========================
@@ -117,6 +132,7 @@ html {
 }
 
 body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     width: 100%;
     min-height: 100vh;
 }

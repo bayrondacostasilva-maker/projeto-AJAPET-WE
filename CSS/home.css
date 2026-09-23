@@ -88,7 +88,7 @@
     left: -83px;
 
     h1 {
-        font-size: 103px;
+        font-size: 98px;
         line-height: 0.9;
 
         color: var(--color-white);
@@ -181,9 +181,7 @@
     padding: 3.5rem 5rem;
 
     box-sizing: border-box;
-
     background-color: var(--color-white-marrom);
-
     display: flex;
     flex-direction: column;
     align-items: center;

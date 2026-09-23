@@ -1,0 +1,194 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+
+        header {
+            background-color: #f00e06;
+            color: white;
+            padding: 20px 8%;
+        }
+
+        .topo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        .inicio {
+            background-color: #e8f5e9;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .inicio h1 {
+            font-size: 42px;
+            color: #f50c04;
+            margin-bottom: 15px;
+        }
+
+        .inicio p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #f12005;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #f80e06;
+        }
+
+
+        main {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .titulo h2 {
+            color: #fa0606;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .titulo p {
+            color: #666;
+        }
+
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card h3 {
+            color: #fc0303;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+
+
+        .responsabilidade {
+            margin-top: 60px;
+            padding: 40px;
+            background-color: #f30606;
+            color: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .responsabilidade h2 {
+            margin-bottom: 15px;
+        }
+
+        .responsabilidade p {
+            max-width: 800px;
+            margin: auto;
+        }
+
+
+        footer {
+            margin-top: 60px;
+            background-color: #1b1b1b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+
+        @media (max-width: 700px) {
+
+            .topo {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .inicio h1 {
+                font-size: 32px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+  

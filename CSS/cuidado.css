@@ -1,194 +1,164 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f7f6;
-            color: #333;
-            line-height: 1.6;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7f6;
+    color: #333;
+    line-height: 1.6;
+}
 
+/* =========================
+   INÍCIO
+========================= */
 
-        header {
-            background-color: #f00e06;
-            color: white;
-            padding: 20px 8%;
-        }
+.inicio {
+    background-color: #e8f5e9;
+    text-align: center;
+    padding: 106px 20px;
+}
 
-        .topo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.inicio h1 {
+    font-size: 42px;
+    color: #f50c04;
+    margin-bottom: 15px;
+}
 
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-        }
+.inicio p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+}
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
+.botao {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #f12005;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.botao:hover {
+    background-color: #c90d05;
+    transform: translateY(-2px);
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
 
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
 
+.titulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
 
-        .inicio {
-            background-color: #e8f5e9;
-            text-align: center;
-            padding: 70px 20px;
-        }
+.titulo h2 {
+    color: #fa0606;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
-        .inicio h1 {
-            font-size: 42px;
-            color: #f50c04;
-            margin-bottom: 15px;
-        }
+.titulo p {
+    color: #666;
+}
 
-        .inicio p {
-            max-width: 700px;
-            margin: auto;
-            font-size: 18px;
-            color: #555;
-        }
+/* =========================
+   CARDS
+========================= */
 
-        .botao {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background-color: #f12005;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
 
-        .botao:hover {
-            background-color: #f80e06;
-        }
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
 
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
 
-        main {
-            max-width: 1100px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
+.card h3 {
+    color: #fc0303;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
 
-        .titulo {
-            text-align: center;
-            margin-bottom: 35px;
-        }
+.card p {
+    color: #555;
+}
 
-        .titulo h2 {
-            color: #fa0606;
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
+/* =========================
+   RESPONSABILIDADE
+========================= */
 
-        .titulo p {
-            color: #666;
-        }
+.responsabilidade {
+    margin-top: 60px;
+    padding: 40px;
+    background-color: #f30606;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+}
 
+.responsabilidade h2 {
+    margin-bottom: 15px;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
+.responsabilidade p {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-        .card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-            transition: 0.3s;
-        }
+/* =========================
+   RESPONSIVIDADE
+========================= */
 
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-        }
+@media (max-width: 700px) {
 
-        .card h3 {
-            color: #fc0303;
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
+    .inicio {
+        padding: 50px 20px;
+    }
 
-        .card p {
-            color: #555;
-        }
+    .inicio h1 {
+        font-size: 32px;
+    }
 
+    .inicio p {
+        font-size: 16px;
+    }
 
+    .cards {
+        grid-template-columns: 1fr;
+    }
 
-        .responsabilidade {
-            margin-top: 60px;
-            padding: 40px;
-            background-color: #f30606;
-            color: white;
-            border-radius: 15px;
-            text-align: center;
-        }
+    .responsabilidade {
+        padding: 30px 20px;
+    }
 
-        .responsabilidade h2 {
-            margin-bottom: 15px;
-        }
-
-        .responsabilidade p {
-            max-width: 800px;
-            margin: auto;
-        }
-
-
-        footer {
-            margin-top: 60px;
-            background-color: #1b1b1b;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        footer p {
-            margin: 5px;
-        }
-
-
-        @media (max-width: 700px) {
-
-            .topo {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav ul {
-                gap: 12px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .inicio h1 {
-                font-size: 32px;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-        }
-
-  
+    .responsabilidade h2 {
+        font-size: 24px;
+    }
+}

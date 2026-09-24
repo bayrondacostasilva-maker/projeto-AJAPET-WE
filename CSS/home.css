@@ -254,14 +254,14 @@
 
     gap: 2.5rem;
 
-    border: 3px solid var(--color-red-dark); /* #A41414 */
+    border: 3px solid var( --color-black); /* #A41414 */
     border-radius: 20px;
 
     box-sizing: border-box;
     z-index: 4;
     overflow: hidden;
 
-    box-shadow: 5px 5px 10px rgba(164, 20, 20, 0.20);
+    box-shadow: 2px 5px 10px var(--color-black);
 }
 
 
@@ -427,7 +427,7 @@
 
 #estrela-fundo {
     height: 100px;
-    top: 43rem;
+    top: 48rem;
     left: 5rem;
     position: absolute;
     z-index: 1;
@@ -446,7 +446,7 @@
 #patas-fundo {
     position: absolute;
     z-index: 1;
-    top: 38rem;
+    top: 48rem;
     right: 0rem;
     height: 212px;
 }

@@ -140,6 +140,7 @@ header button {
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--color-white-marrom);
 }
 
 body {

@@ -1,0 +1,808 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    background: #f8eee4;
+    color: #111111;
+}
+
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.pagina {
+    min-height: 100vh;
+    background: #f8eee4;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+    height: 69px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e7d5c6;
+
+    background: #f8eee4;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: 900;
+    color: #a90012;
+
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.header-text {
+    font-size: 15px;
+    color: #66605d;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 60px 15px 90px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    margin-bottom: 70px;
+}
+
+.hero h1 {
+    max-width: 760px;
+
+    font-size: clamp(55px, 7vw, 88px);
+    line-height: 0.98;
+
+    font-weight: 900;
+    letter-spacing: -4px;
+
+    margin-bottom: 40px;
+
+    color: #111111;
+}
+
+.hero h1 span {
+    color: #ad0013;
+}
+
+
+/* =====================================================
+   HERO GRID
+===================================================== */
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* =====================================================
+   IMAGEM PRINCIPAL
+===================================================== */
+
+.hero-image {
+    height: 430px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =====================================================
+   OBJETIVO
+===================================================== */
+
+.objective {
+    min-height: 430px;
+
+    padding: 40px;
+
+    background: #ad0013;
+
+    color: white;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-title {
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    color: #e7c5c7;
+}
+
+.objective h2 {
+    max-width: 200px;
+
+    margin-bottom: 25px;
+
+    font-size: 38px;
+    line-height: 1.1;
+
+    color: white;
+}
+
+.objective p {
+    font-size: 19px;
+    line-height: 1.65;
+
+    color: #fff5f5;
+}
+
+
+/* =====================================================
+   INFORMAÇÕES
+===================================================== */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns: 1.35fr 1fr;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.card {
+    border-radius: 20px;
+
+    padding: 40px;
+
+    border: 1px solid #e5d9d0;
+}
+
+
+/* =====================================================
+   QUEM SOMOS
+===================================================== */
+
+.quem-somos {
+    background: #ffffff;
+}
+
+.card-title {
+    position: relative;
+
+    margin-bottom: 30px;
+    padding-left: 25px;
+
+    font-size: 25px;
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    color: #111111;
+}
+
+.card-title::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+
+    width: 10px;
+    height: 10px;
+
+    background: #ad0013;
+
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.65;
+
+    color: #5f5a57;
+}
+
+
+/* =====================================================
+   DESENVOLVEDORES
+===================================================== */
+
+.dev-title {
+    margin-top: 40px;
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #ad0013;
+}
+
+.devs {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 45px;
+    row-gap: 25px;
+}
+
+.dev {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.dev strong {
+    font-size: 16px;
+    color: #111111;
+}
+
+.github {
+    font-size: 14px;
+    color: #ad0013;
+}
+
+.github a {
+    color: #ad0013;
+
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+.github a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   COMO FUNCIONA
+===================================================== */
+
+.como-funciona {
+    background: #111111;
+
+    border: none;
+
+    color: white;
+}
+
+.como-funciona .card-title {
+    color: white;
+}
+
+.como-funciona .card-title::before {
+    background: #ff4a4a;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    margin-top: 35px;
+}
+
+.step {
+    display: grid;
+
+    grid-template-columns: 45px 1fr;
+
+    gap: 0;
+
+    align-items: start;
+
+    color: #cfc9c6;
+
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.step-number {
+    color: #ff4545;
+
+    font-size: 19px;
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   AVISO
+===================================================== */
+
+.warning {
+    display: grid;
+
+    grid-template-columns: 135px 1fr;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 35px 40px;
+
+    margin-bottom: 30px;
+
+    background: #f9e7c6;
+
+    border: 1px solid #efc978;
+
+    border-radius: 20px;
+}
+
+.warning strong {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 7px 15px;
+
+    background: #f0c44e;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    color: #161616;
+}
+
+.warning p {
+    font-size: 16px;
+    line-height: 1.65;
+
+    color: #49433e;
+}
+
+
+/* =====================================================
+   ÁREA DO QUESTIONÁRIO
+===================================================== */
+
+.questionnaire-grid {
+    display: grid;
+
+    grid-template-columns: 1.7fr 1fr;
+
+    grid-template-rows: 340px 160px;
+
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+
+/* =====================================================
+   CARD QUESTIONÁRIO
+===================================================== */
+
+.questionnaire {
+    background: white;
+
+    border: 1px solid #ded6d0;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.questionnaire-label {
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #ad0013;
+}
+
+.questionnaire h2 {
+    max-width: 400px;
+
+    margin-bottom: 15px;
+
+    font-size: 34px;
+    line-height: 1.1;
+
+    font-weight: 900;
+
+    color: #111111;
+}
+
+.questionnaire p {
+    max-width: 440px;
+
+    font-size: 17px;
+    line-height: 1.6;
+
+    color: #68615d;
+}
+
+
+/* =====================================================
+   BOTÃO QUESTIONÁRIO
+===================================================== */
+
+.questionnaire-button {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 12px 0;
+
+    color: #ad0013;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.questionnaire-button:hover {
+    transform: translateX(5px);
+}
+
+
+/* =====================================================
+   IMAGEM DO GATO
+===================================================== */
+
+.cat-image {
+    grid-column: 2;
+    grid-row: 1;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+.cat-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.cat-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   LEMBRE-SE
+===================================================== */
+
+.remember {
+    grid-column: 1 / -1;
+
+    background: #e53232;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.remember h2 {
+    margin-bottom: 15px;
+
+    font-size: 36px;
+
+    font-style: italic;
+    font-weight: 900;
+}
+
+.remember p {
+    color: white;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    min-height: 130px;
+
+    padding: 35px 30px;
+
+    border-top: 1px solid #e5d5c9;
+
+    background: #f8eee4;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-bottom: 5px;
+
+    font-size: 20px;
+    font-weight: 900;
+
+    color: #ad0013;
+
+    text-transform: uppercase;
+}
+
+.footer-description {
+    font-size: 14px;
+
+    color: #625b57;
+}
+
+.footer-links {
+    font-size: 14px;
+
+    color: #66605d;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    .header-text {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 45px 20px 70px;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        height: 400px;
+    }
+
+    .objective {
+        min-height: auto;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .questionnaire-grid {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: 300px 180px;
+    }
+
+    .questionnaire {
+        padding: 30px;
+    }
+
+    .questionnaire h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .header-text {
+        font-size: 11px;
+    }
+
+    .container {
+        padding: 35px 15px 60px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+    .hero-image {
+        height: 280px;
+    }
+
+    .objective {
+        padding: 30px;
+    }
+
+    .objective h2 {
+        font-size: 32px;
+    }
+
+    .objective p {
+        font-size: 17px;
+    }
+
+    .card {
+        padding: 30px 25px;
+    }
+
+    .devs {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .warning {
+        grid-template-columns: 1fr;
+
+        padding: 25px;
+    }
+
+    .questionnaire-grid {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto 260px auto;
+    }
+
+    .questionnaire {
+        min-height: 300px;
+    }
+
+    .cat-image {
+        grid-column: auto;
+        grid-row: auto;
+
+        height: 260px;
+    }
+
+    .remember {
+        grid-column: auto;
+
+        min-height: 220px;
+    }
+
+    .remember h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 30px 20px;
+    }
+}

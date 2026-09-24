@@ -181,15 +181,13 @@
     padding: 3.5rem 5rem;
 
     box-sizing: border-box;
-    background-color: var(--color-white-marrom);
+    background-color: var(--color-white-marrom); /* #FDF6EE */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     text-align: center;
-
-    z-index: 1;
 }
 
 
@@ -203,7 +201,7 @@
     font-size: 2.4rem;
     line-height: 1.1;
 
-    color: var(--color-red-dark);
+    color: var(--color-red-dark); /* #A41414 */
 }
 
 
@@ -217,7 +215,7 @@
 
     margin: 12px auto 0;
 
-    background-color: var(--color-yellou);
+    background-color: var(--color-yellou); /* #EC6159 */
 
     border-radius: 10px;
 }
@@ -235,7 +233,7 @@
     font-size: 1.05rem;
     line-height: 1.5;
 
-    color: var(--color-gray-dark);
+    color: var(--color-gray-dark); /* #423932 */
 }
 
 
@@ -256,14 +254,14 @@
 
     gap: 2.5rem;
 
-    background-color: var(--color-white);
-
-    border: 1px solid rgba(127, 21, 21, 0.08);
+    border: 3px solid var(--color-red-dark); /* #A41414 */
     border-radius: 20px;
 
     box-sizing: border-box;
+    z-index: 4;
+    overflow: hidden;
 
-    z-index: 1;
+    box-shadow: 5px 5px 10px rgba(164, 20, 20, 0.20);
 }
 
 
@@ -279,6 +277,8 @@
     align-items: center;
 
     text-align: center;
+    z-index: 4;
+    overflow: hidden;
 }
 
 
@@ -298,10 +298,11 @@
 
     font-size: 1.8rem;
 
-    background-color: var(--color-yellou);
-    color: var(--color-red-dark);
+    background-color: var(--color-yellou); /* #EC6159 */
+    color: var(--color-red-dark); /* #A41414 */
 
     border-radius: 50%;
+    overflow: hidden;
 }
 
 
@@ -314,7 +315,7 @@
 
     font-size: 1.25rem;
 
-    color: var(--color-red-dark);
+    color: var(--color-red-dark); /* #A41414 */
 }
 
 
@@ -330,7 +331,7 @@
     font-size: 0.95rem;
     line-height: 1.45;
 
-    color: var(--color-gray);
+    color: var(--color-gray); /* #565F5D */
 }
 
 
@@ -344,11 +345,11 @@
 
     margin-top: 1rem;
 
-    border: 2px solid var(--color-red-dark);
+    border: 2px solid var(--color-red-dark); /* #A41414 */
     border-radius: 2rem;
 
-    background-color: var(--color-red-dark);
-    color: var(--color-white);
+    background-color: var(--color-red-dark); /* #A41414 */
+    color: var(--color-white); /* #FFFFFF */
 
     font-size: 0.9rem;
     font-weight: bold;
@@ -363,8 +364,8 @@
 
 
 .opcao button:hover {
-    background-color: var(--color-red);
-    border-color: var(--color-red);
+    background-color: var(--color-red); /* #CC2C2B */
+    border-color: var(--color-red); /* #CC2C2B */
 
     transform: translateY(-2px);
 }
@@ -393,10 +394,10 @@
 
     height: 196px;
 
-    z-index: 2;
+    z-index: 5;
 
     filter: drop-shadow(
-        0 2px 8px rgba(17, 17, 17, 0.55)
+        0 2px 8px rgba(164, 20, 20, 0.35)
     );
 }
 
@@ -407,27 +408,68 @@
 
 #gato-lado {
     position: absolute;
-
-    right: 138px;
-
-    height: 196px;
+    right: 174px;
+    height: 147px;
 
     filter: drop-shadow(
-        0 2px 8px rgba(17, 17, 17, 0.55)
+        0 2px 8px rgba(164, 20, 20, 0.35)
     );
+
+    z-index: 3;
+    top: 70rem;
 }
 
 
-/* =========================================================
-   FOOTER
-========================================================= */
+#texto-continuacao {
+    z-index: 4;
+}
 
-footer {
-    height: 20.1rem;
 
-    display: flex;
-    justify-content: space-between;
+#estrela-fundo {
+    height: 100px;
+    top: 43rem;
+    left: 5rem;
+    position: absolute;
+    z-index: 1;
+}
 
-    background-color: var(--color-red-dark);
-    color: var(--color-white);
+
+#osso-fundo {
+    position: absolute;
+    z-index: 1;
+    left: 4rem;
+    height: 13rem;
+    top: 69rem;
+}
+
+
+#patas-fundo {
+    position: absolute;
+    z-index: 1;
+    top: 38rem;
+    right: 0rem;
+    height: 212px;
+}
+
+
+#fundo-opcao {
+    height: 15rem;
+    position: absolute;
+    left: 282.10px;
+    top: 952px;
+    border-radius: 20px;
+}
+
+
+#fundo-opcao-baixo {
+    position: absolute;
+    height: 15rem;
+    top: 1054px;
+    right: 282px;
+    border-radius: 20px;
+}
+
+
+.img-opcao {
+    height: 3rem;
 }

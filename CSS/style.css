@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
+
     /* =========================
        CORES PRINCIPAIS
     ========================= */
@@ -8,6 +9,7 @@
     --color-red: #B91C1C;
     --color-red-light: #D83232;
     --color-red-claro: #D92B2B;
+
 
     /* =========================
        CORES NEUTRAS
@@ -21,12 +23,21 @@
     --color-white: #FFFFFF;
     --color-white-marrom: #F8EEE5;
 
+
     /* =========================
-       COR DE DESTAQUE
+       DESTAQUE
     ========================= */
 
     --color-yellou: #F4C95D;
-} 
+
+
+    /* =========================
+       FOOTER / ESTADOS
+    ========================= */
+
+    --color-footer-border: rgba(255, 255, 255, 0.15);
+    --color-footer-hover: #F4C95D;
+}
 
 header {
     /* Mantém o header fixo no topo */
@@ -153,7 +164,7 @@ main{
 ========================= */
 
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
     display: block;
 }
 
@@ -189,4 +200,258 @@ button {
     font: inherit;
 }
 
+.footer {
+    background-color: var(--color-red-dark);
+    color: var(--color-white);
+    padding: 4rem 7% 0;
+
+    margin-top: 4rem;
+}
+
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 4rem;
+
+    padding-bottom: 3rem;
+}
+
+
+/* =========================
+   IDENTIDADE
+========================= */
+
+.footer-brand {
+    max-width: 350px;
+}
+
+.footer-logo {
+    width: 166px;
+    height: 72px;
+
+    object-fit: contain;
+
+    margin-bottom: 1rem;
+}
+
+.footer-brand h2 {
+    margin: 0 0 1rem;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.footer-brand p {
+    color: var(--color-white-marrom);
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.footer h3 {
+    position: relative;
+
+    margin: 0 0 1.5rem;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+
+/* Pequena linha abaixo do título */
+
+.footer h3::after {
+    content: "";
+
+    display: block;
+
+    width: 35px;
+    height: 3px;
+
+    margin-top: 0.6rem;
+
+    background-color: var(--color-yellou);
+    border-radius: 10px;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links,
+.footer-project {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer a {
+    color: var(--color-white-marrom);
+
+    text-decoration: none;
+
+    font-size: 0.95rem;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* Ícones dos links */
+
+.footer a i {
+    width: 22px;
+
+    margin-right: 0.4rem;
+
+    text-align: center;
+}
+
+
+/* Hover */
+
+.footer-links a:hover,
+.footer-project a:hover {
+    color: var(--color-yellou);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   DESENVOLVIMENTO
+========================= */
+
+.footer-social p {
+    color: var(--color-white-marrom);
+
+    line-height: 1.6;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 1.2rem;
+}
+.github-link {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.6rem;
+
+    padding: 0.7rem 1.2rem;
+
+    background-color: var(--color-black);
+
+    border-radius: 8px;
+
+    color: var(--color-white) !important;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.github-link i {
+    font-size: 1.2rem;
+}
+
+.github-link:hover {
+    background-color: var(--color-gray-dark);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.social-icons {
+    display: flex;
+
+    gap: 0.7rem;
+
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.social-icons a i {
+    margin: 0;
+
+    font-size: 1.1rem;
+}
+
+.social-icons a:hover {
+    background-color: var(--color-yellou);
+
+    color: var(--color-red-dark);
+
+    transform: translateY(-3px);
+}
+
+
+
+
+.footer-bottom {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 1.5rem 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 0.8rem;
+}
 

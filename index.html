@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJ.APET</title>
+    <title>AJAPET</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/home.css">
     <link rel="shortcut icon" href="assets/imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
         <div id="header-main"><img src="assets/imagens/logo2.2.png" alt="logo"></div>
         <nav id="nav-main">
             <ol>
-                <ul><a href="#">Home</a></ul>
+                <ul><a href="index.html">Home</a></ul>
                 <ul><a href="questionario/index.html">Questionario</a></ul>
                 <ul><a href="#">Cuidados</a></ul>
                 <ul><a href="#">Sobre</a></ul>
@@ -47,29 +48,36 @@
         <div class="centersection">
             <section id="continuacao">
 
-                <h2>Encontre tudo para cuidar do seu pet</h2>
-
-                <p>
-                    Informações simples para ajudar você a cuidar,
-                    proteger e proporcionar mais bem-estar ao seu animal.
-                </p>
+                <div id="texto-continuacao">
+                    <h2>Encontre tudo para cuidar do seu pet</h2>
+                    <p>
+                        Informações simples para ajudar você a cuidar,
+                        proteger e proporcionar mais bem-estar ao seu animal.
+                    </p>
+                </div>
+                <img src="assets/imagens/estrela-fundo.png" alt="estrala-fundo" id="estrela-fundo">
+                <img src="assets/imagens/osso-fundo.png" alt="osso-fundo" id="osso-fundo">
                 <img src="assets/imagens/gato-lado.png" alt="gato-lado" id="gato-lado">
+                <img src="assets/imagens/patas-fundo.png" alt="patas-fundo" id="patas-fundo">
                 <img src="assets/imagens/cachorro-cima.png" alt="cachorro-cima" id="cachorro-cima">
                 <div class="opcoes">
+                    <img src="assets/imagens/fundo-opcao.png" alt="fundo-opcao" id="fundo-opcao">
+                    <img src="assets/imagens/fundo-opcao-baixo.png" alt="fundo-opcao-baixo" id="fundo-opcao-baixo">
                     <div class="opcao">
-                        <span>🐾</span>
+                        <span><img src="assets/imagens/gato-pata.png" alt="gato-pata" class="img-opcao"></span>
                         <h3>Cuidados</h3>
                         <p>Dicas para cuidar melhor do seu pet e manter seu bem-estar.</p>
                         <button>Conhecer</button>
                     </div>
                     <div class="opcao">
-                        <span>❤️</span>
+                        <span><img src="assets/imagens/cachorro.png" alt="gato-pequeno" class="img-opcao"></span>
                         <h3>Questionário</h3>
                         <p>Conheça melhor as necessidades e características do seu pet.</p>
                         <button><a href="questionario/index.html" target="_blank">Responder</a></button>
                     </div>
+
                     <div class="opcao">
-                        <span>🏠</span>
+                        <span><img src="assets/imagens/gato-preto.png" alt="gato-preto" class="img-opcao"></span>
                         <h3>Adoção</h3>
                         <p>Encontre informações para ajudar um animal a encontrar um novo lar.</p>
                         <button>Conhecer</button>
@@ -78,11 +86,87 @@
             </section>
         </div>
 
-        <footer>
-            <P>Cretidos !</P>
+        <footer class="footer">
+            <div class="footer-container">
 
+                <!-- Identidade do projeto -->
+                <div class="footer-brand">
+                    <img src="assets/imagens/logo2.2.png" alt="AJA-PET" class="footer-logo">
+                    <h2>AJA-PET</h2>
+                    <p>
+                        Plataforma digital voltada à assistência,
+                        proteção e adoção responsável de animais.
+                    </p>
+                </div>
+                <!-- Links rápidos -->
+                <div class="footer-links">
+                    <h3>Links rápidos</h3>
+
+                    <a href="#inicio">
+                        <i class="fa-solid fa-house"></i>
+                        Início
+                    </a>
+
+                    <a href="#sobre">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Sobre o projeto
+                    </a>
+
+                    <a href="#adocao">
+                        <i class="fa-solid fa-paw"></i>
+                        Cuidados
+                    </a>
+                    <a href="questionario/index.html">
+                        <i class="fa-solid fa-comments"></i>
+                        Questionário
+                    </a>
+                </div>
+                <!-- Projeto -->
+                <div class="footer-project">
+                    <h3>Projeto</h3>
+                    <a href="https://www.worldanimalprotection.org.br/" target="_blank">
+                        <i class="fa-solid fa-shield-dog"></i>
+                        Proteção animal
+                    </a>
+                    <a href="https://anda.jor.br/">
+                        <i class="fa-solid fa-hand-holding-heart" target="_blank"></i>
+                        Assistência
+                    </a>
+                </div>
+                <!-- Redes / GitHub -->
+                <div class="footer-social">
+                    <h3>Desenvolvimento</h3>
+
+                    <p>
+                        Acompanhe o desenvolvimento do projeto:
+                    </p>
+
+                    <a href="https://github.com/bayrondacostasilva-maker/projeto-AJAPET-WE" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/re.d_arts/" aria-label="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/bayrondacostasilva-maker/projeto-AJAPET-WE" aria-label="GitHub" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- Parte inferior -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 AJA-PET. Todos os direitos reservados.
+                </p>
+                <p>
+                    Instituto Federal do Maranhão — Campus Grajaú
+                </p>
+            </div>
         </footer>
     </main>
 </body>
-
 </html>

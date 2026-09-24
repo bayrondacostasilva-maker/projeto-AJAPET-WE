@@ -1,4 +1,6 @@
-/* CONFIGURAÇÕES GERAIS */
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
 
 * {
     margin: 0;
@@ -7,193 +9,689 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff5f5;
-    color: #333;
-    line-height: 1.6;
+    background: #f8eade;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+.pagina {
+    width: 100%;
+    min-width: 1200px;
 }
 
 
-/* CABEÇALHO */
+/* =========================================
+   HEADER
+========================================= */
 
 header {
-    background-color: #c62828;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
+    height: 70px;
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
+    padding: 0 80px;
 
-header p {
-    font-size: 18px;
-}
-
-
-/* CONTAINER */
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 30px auto;
-}
-
-
-/* CARDS */
-
-.card {
-    background-color: #ffffff;
-    margin-bottom: 25px;
-    padding: 25px;
-    border-radius: 12px;
-    border: 2px solid #e53935;
-    box-shadow: 0 3px 10px rgba(198, 40, 40, 0.20);
-}
-
-
-/* TÍTULOS */
-
-.titulo {
-    font-size: 26px;
-    color: #c62828;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #e53935;
-    padding-bottom: 10px;
-}
-
-
-/* CONTEÚDO */
-
-.conteudo {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e7d5c5;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.header-text {
+    font-size: 14px;
+    color: #666;
 }
 
 
-/* IMAGENS */
+/* =========================================
+   CONTAINER
+========================================= */
 
-.imagem {
-    width: 300px;
-    height: 220px;
-    object-fit: cover;
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 45px 0 60px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    width: 100%;
+}
+
+.hero h1 {
+    width: 100%;
+    max-width: 1100px;
+
+    margin-bottom: 40px;
+
+    font-size: 54px;
+    line-height: 1.03;
+    letter-spacing: -2.5px;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    color: #e5393f;
+}
+
+
+/* =========================================
+   GRID DO HERO
+========================================= */
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns: minmax(0, 820px) minmax(280px, 1fr);
+
+    gap: 22px;
+
+    width: 100%;
+    height: 175px;
+}
+
+
+/* =========================================
+   IMAGEM PRINCIPAL
+========================================= */
+
+.hero-image {
+    width: 100%;
+    height: 175px;
+
+    overflow: hidden;
+
     border-radius: 10px;
-    border: 4px solid #e53935;
+
+    background: #ead8c8;
+
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 10px;
 }
 
 
-/* TEXTOS */
+/* =========================================
+   OBJETIVO
+========================================= */
 
-.texto {
-    flex: 1;
+.objective {
+    height: 175px;
+
+    padding: 25px;
+
+    background: #ad1118;
+
+    color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
 }
 
-.texto p {
-    font-size: 17px;
+.small-title {
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 700;
+
+    opacity: 0.8;
+
+    margin-bottom: 8px;
 }
 
+.objective h2 {
+    font-size: 27px;
 
-/* LISTA */
-
-ul {
-    padding-left: 25px;
-}
-
-li {
     margin-bottom: 10px;
-    font-size: 16px;
 }
 
-li::marker {
-    color: #c62828;
+.objective p {
+    font-size: 14px;
+
+    line-height: 1.45;
+
+    color: #f9dddd;
 }
 
 
-/* AVISO */
+/* =========================================
+   INFORMAÇÕES
+========================================= */
 
-.aviso {
-    background-color: #ffebee;
-    border-left: 6px solid #c62828;
-    padding: 20px;
+.info-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+
+    margin-top: 22px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.card {
+    background: #fff;
+
+    border-radius: 10px;
+
+    padding: 28px;
+
+    min-height: 330px;
+
+    border: 1px solid #eaded3;
+}
+
+.card-title {
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    color: #ad1118;
+
+    font-weight: 800;
+
+    margin-bottom: 18px;
+}
+
+.card p {
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+/* =========================================
+   QUEM SOMOS
+========================================= */
+
+.quem-somos {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.dev-title {
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    font-weight: 800;
+}
+
+.devs {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.dev {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px;
+
+    background: #f8eade;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+}
+
+.dev strong {
+    font-size: 12px;
+
+    max-width: 180px;
+}
+
+.github {
+    color: #ad1118;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   COMO FUNCIONA
+========================================= */
+
+.steps {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.step {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    color: #444;
+}
+
+.step:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    min-width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ad1118;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   AVISO
+========================================= */
+
+.warning {
+    margin-top: 22px;
+
+    padding: 22px 25px;
+
+    background: #fff3e8;
+
+    border-left: 5px solid #ad1118;
+
     border-radius: 8px;
 }
 
-.aviso p {
-    margin-bottom: 15px;
+.warning strong {
+    display: block;
+
+    color: #ad1118;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
 }
 
-.aviso p:last-child {
-    margin-bottom: 0;
+.warning p {
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    color: #666;
 }
 
 
-/* FRASE FINAL */
+/* =========================================
+   QUESTIONÁRIO
+========================================= */
 
-.final {
-    background-color: #ffebee;
-    text-align: center;
+.questionnaire-grid {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 22px;
+
+    margin-top: 22px;
+}
+
+
+/* =========================================
+   CARD QUESTIONÁRIO
+========================================= */
+
+.questionnaire {
+    min-height: 280px;
+
     padding: 30px;
-    margin-top: 30px;
-    border-radius: 12px;
-    border: 2px solid #e53935;
+
+    background: #ad1118;
+
+    color: white;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
 }
 
-.final h2 {
-    color: #c62828;
+.questionnaire-label {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 800;
+
+    opacity: 0.8;
+
+    margin-bottom: 12px;
+}
+
+.questionnaire h2 {
+    font-size: 30px;
+
+    line-height: 1.1;
+
     margin-bottom: 15px;
 }
 
-.final p {
-    font-size: 18px;
+.questionnaire p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #f9dddd;
 }
 
 
-/* RODAPÉ */
+/* =========================================
+   BOTÃO DO QUESTIONÁRIO
+========================================= */
+
+.questionnaire-button {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 12px 18px;
+
+    background: white;
+
+    color: #ad1118;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition: 0.2s;
+}
+
+.questionnaire-button:hover {
+    background: #f8eade;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   IMAGEM DO GATO
+========================================= */
+
+.cat-image {
+    min-height: 280px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #ead8c8;
+}
+
+.cat-image img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 280px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   LEMBRE-SE
+========================================= */
+
+.remember {
+    min-height: 280px;
+
+    padding: 30px;
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #eaded3;
+}
+
+.remember h2 {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.remember p {
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #555;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
-    background-color: #b71c1c;
+    min-height: 120px;
+
+    padding: 30px 80px;
+
+    background: #111;
+
     color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.footer-logo {
+    font-size: 18px;
+
+    font-weight: 800;
+
+    margin-bottom: 6px;
+}
+
+.footer-description {
+    font-size: 12px;
+
+    color: #aaa;
+}
+
+.footer-links {
+    font-size: 12px;
+
+    color: #aaa;
 }
 
 
-/* EFEITO AO PASSAR O MOUSE */
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
 
-.card:hover {
-    border-color: #b71c1c;
-    box-shadow: 0 5px 15px rgba(183, 28, 28, 0.30);
+@media (max-width: 1250px) {
+
+    .container {
+        width: calc(100% - 80px);
+    }
+
+    .hero-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
 }
 
 
-/* RESPONSIVIDADE */
+@media (max-width: 900px) {
 
-@media (max-width: 700px) {
-
-    header h1 {
-        font-size: 28px;
+    .pagina {
+        min-width: 0;
     }
 
-    header p {
-        font-size: 16px;
+    header {
+        padding: 0 30px;
     }
 
-    .conteudo {
-        flex-direction: column;
-        align-items: stretch;
+    .container {
+        width: calc(100% - 40px);
     }
 
-    .imagem {
-        width: 100%;
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+
+        height: auto;
+    }
+
+    .hero-image {
         height: 250px;
     }
 
-    .titulo {
-        font-size: 22px;
+    .objective {
+        height: auto;
+
+        min-height: 175px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .questionnaire-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+    .container {
+        width: calc(100% - 30px);
+
+        padding-top: 30px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .hero-image {
+        height: 220px;
+    }
+
+    .devs {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
     }
 
 }

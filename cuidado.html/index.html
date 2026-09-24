@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJ.APET — Questionário</title>
-    <link rel="stylesheet" href="../CSS/questionario.css">
+    <link rel="stylesheet" href="../CSS/cuidado.css">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="shortcut icon" href="../assets/imagens/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
+    <title>Cuidados e Bem-Estar Animal</title>
 
+
+</head>
 <body>
-    <header>
+   <header>
         <div id="header-main">
             <img src="../assets/imagens/logo2.2.png" alt="logo">
         </div>
@@ -30,74 +30,127 @@
         </div>
     </header>
 
-    <main>
-        <section class="questionario">
 
-            <h2>Descubra o que seu pet precisa</h2>
+    <section class="inicio" id="inicio">
+
+        <h1>Cuidados e Bem-Estar</h1>
+
+        <p>
+            Cuidar de um animal é muito mais do que oferecer comida.
+            É proporcionar saúde, segurança, carinho e uma vida com qualidade.
+        </p>
+
+        <a href="#cuidados" class="botao">
+            Conheça os cuidados
+        </a>
+
+    </section>
+
+
+
+    <main id="cuidados">
+
+        <div class="titulo">
+
+            <h2>Cuidados essenciais</h2>
+
             <p>
-                Responda às perguntas abaixo para recebermos orientações
-                personalizadas para o seu animal.
+                Conheça alguns dos principais cuidados necessários
+                para manter seu animal saudável e feliz.
             </p>
 
-            <form id="form-questionario">
-                <label for="nome-tutor">Seu nome:</label>
-                <input type="text" id="nome-tutor" name="nome-tutor" required>
+        </div>
 
-                <label for="tipo-animal">Tipo de animal:</label>
-                <select id="tipo-animal" name="tipo-animal" required>
-                    <option value="">Selecione</option>
-                    <option value="cachorro">Cachorro</option>
-                    <option value="gato">Gato</option>
-                    <option value="outro">Outro</option>
-                </select>
 
-                <label for="nome-pet">Nome do pet:</label>
-                <input type="text" id="nome-pet" name="nome-pet" required>
+        <div class="cards">
 
-                <label for="idade-pet">Idade do pet (anos):</label>
-                <input type="number" id="idade-pet" name="idade-pet" min="0" required>
 
-                <label for="porte">Porte:</label>
-                <select id="porte" name="porte" required>
-                    <option value="">Selecione</option>
-                    <option value="pequeno">Pequeno</option>
-                    <option value="medio">Médio</option>
-                    <option value="grande">Grande</option>
-                </select>
+            <section class="card">
 
-                <fieldset>
-                    <legend>Está com a vacinação em dia?</legend>
-                    <label><input type="radio" name="vacinado" value="sim" required> Sim</label>
-                    <label><input type="radio" name="vacinado" value="nao"> Não</label>
-                    <label><input type="radio" name="vacinado" value="nao-sei"> Não sei</label>
-                </fieldset>
+                <h3>🍲 Alimentação</h3>
 
-                <fieldset>
-                    <legend>Já é castrado(a)?</legend>
-                    <label><input type="radio" name="castrado" value="sim" required> Sim</label>
-                    <label><input type="radio" name="castrado" value="nao"> Não</label>
-                </fieldset>
+                <p>
+                    Uma alimentação adequada é fundamental para a saúde
+                    dos animais. Ofereça alimentos apropriados para a
+                    espécie, idade e tamanho do animal e mantenha sempre
+                    água limpa e fresca disponível.
+                </p>
 
-                <label for="alimentacao">Como é a alimentação atual?</label>
-                <select id="alimentacao" name="alimentacao" required>
-                    <option value="">Selecione</option>
-                    <option value="racao">Ração</option>
-                    <option value="caseira">Comida caseira</option>
-                    <option value="mista">Mista</option>
-                </select>
+            </section>
 
-                <label for="observacoes">Alguma observação ou dificuldade que você tem com o cuidado do seu
-                    pet?</label>
-                <textarea id="observacoes" name="observacoes" rows="4"></textarea>
 
-                <button type="submit">Enviar</button>
-            </form>
+            <section class="card">
 
-            <div id="resultado-questionario" class="resultado" hidden></div>
+                <h3>🩺 Saúde</h3>
+
+                <p>
+                    Consultas veterinárias ajudam a prevenir doenças e
+                    identificar problemas de saúde. Vacinas, vermifugação
+                    e controle de pulgas e carrapatos também são importantes.
+                </p>
+
+            </section>
+
+
+            <section class="card">
+
+                <h3>🧼 Higiene</h3>
+
+                <p>
+                    Manter o animal e o ambiente limpos contribui para
+                    sua saúde e conforto. Cuide dos pelos, unhas, dentes
+                    e ouvidos de acordo com as necessidades do animal.
+                </p>
+
+            </section>
+
+
+
+            <section class="card">
+
+                <h3>🏃 Exercícios e brincadeiras</h3>
+
+                <p>
+                    Passeios, brincadeiras e atividades físicas ajudam
+                    o animal a gastar energia, manter o corpo saudável
+                    e evitar o estresse e o tédio.
+                </p>
+
+            </section>
+
+            <section class="card">
+
+                <h3>❤️ Carinho e atenção</h3>
+
+                <p>
+                    Os animais também precisam de atenção e companhia.
+                    O carinho ajuda a criar uma relação de confiança e
+                    contribui para o bem-estar emocional.
+                </p>
+
+            </section>
+
+
+            <section class="card">
+
+                <h3>🏠 Ambiente seguro</h3>
+
+                <p>
+                    O ambiente onde o animal vive deve ser confortável,
+                    limpo e seguro. Produtos perigosos, medicamentos,
+                    fios e objetos pequenos devem ficar fora do alcance.
+                </p>
+
+            </section>
+
+
+        </div>
         </section>
+
     </main>
 
- <footer class="footer">
+
+<footer class="footer">
             <div class="footer-container">
 
                 <!-- Identidade do projeto -->
@@ -127,7 +180,7 @@
                         <i class="fa-solid fa-paw"></i>
                         Cuidados
                     </a>
-                    <a href="questionario/index.html">
+                    <a href="../questionario/index.html">
                         <i class="fa-solid fa-comments"></i>
                         Questionário
                     </a>
@@ -178,7 +231,6 @@
                 </p>
             </div>
         </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>

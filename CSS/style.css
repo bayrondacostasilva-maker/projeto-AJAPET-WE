@@ -19,6 +19,7 @@
     --color-black: #000000;
     --color-gray-dark: #333333;
     --color-gray: #666666;
+    --color-grey-escuro: #141212;
     --color-gray-light: #F2F2F2;
 
     --color-white: #FFFFFF;
@@ -42,6 +43,7 @@
 
 .header{
     background-color: var(--color-black);  
+    
 }
 
 
@@ -55,16 +57,6 @@
 /* =========================
    CONFIGURAÇÕES GERAIS
 ========================= */
-
-html {
-    scroll-behavior: smooth;
-    background-color: var(--color-white-marrom);
-}
-
-body {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-}
 
 
 /* =========================
@@ -119,7 +111,7 @@ button {
 }
 
 .footer {
-    background-color: var(--color-red-dark);
+    background-color: var(--color-grey-escuro);
     color: var(--color-white);
     padding: 4rem 7% 0;
 

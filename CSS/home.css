@@ -1,6 +1,12 @@
 /* =========================================================
    SEÇÃO PRINCIPAL
 ========================================================= */
+html,
+body {
+    max-width: 100%;
+  
+    background-color: var(--color-black);
+}
 
 .centersection {
     width: 100%;
@@ -10,7 +16,6 @@
 
     background-color: var(--color-black);
 
-    /* overflow: hidden; */
 }
 
 
@@ -36,17 +41,6 @@
 
 }
 
-
-#gatofundo {
-    position: absolute;
-    left: 21%;
-    top: 5%;
-    width: 100%;
-    z-index: 2;
-
-}
-
-
 #texto {
     position: absolute;
     height: 50%;
@@ -71,26 +65,19 @@
 
 @media (max-width: 640px) {
 
-   
-
     #texto {
-        left: 8%;
-        top: 3%;
-    }
-
-    #texto h1 {
-        font-size: 40px;
-    }
-
-    #texto p {
-        font-size: 30px;
+        position: static;
+        width: 100%;
+        height: auto;
+        padding-top: 6rem;
     }
 
     #secaodeadocao {
-        width: 100%;
+        padding: 0 1rem;
+        align-items: flex-start;
+        overflow: hidden;
     }
 }
-
 
 /* =========================================================
    CONTINUAÇÃO DA PÁGINA
@@ -101,10 +88,7 @@
     min-height: 400px;
 
     padding: 3.5rem 5rem;
-
-    box-sizing: border-box;
-    background-color: var(--color-white-marrom);
-    /* #FDF6EE */
+    background-color: var(--color-black);
 
     display: flex;
     flex-direction: column;
@@ -112,6 +96,7 @@
     justify-content: center;
 
     text-align: center;
+
 }
 
 
@@ -125,7 +110,7 @@
     font-size: 2.4rem;
     line-height: 1.1;
 
-    color: var(--color-red-dark);
+    color: var(--color-white);
     /* #A41414 */
 }
 
@@ -159,7 +144,7 @@
     font-size: 1.05rem;
     line-height: 1.5;
 
-    color: var(--color-gray-dark);
+    color: var(--color-gray);
     /* #423932 */
 }
 
@@ -182,14 +167,16 @@
 
     gap: 2.5rem;
 
-    border: 1px solid var(--color-black);
-    /* #A41414 */
-    border-radius: 20px;
+
 
     box-sizing: border-box;
     z-index: 4;
-
-    box-shadow: 2px 5px 10px var(--color-black);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background:
+        linear-gradient(var(--color-black), var(--color-black)) padding-box,
+        linear-gradient(to top, var(--color-black), var(--color-white)) border-box;
+   
 }
 
 
@@ -226,9 +213,9 @@
 
     font-size: 1.8rem;
 
-    background-color: var(--color-yellou);
+    background-color: var(--color-white);
     /* #EC6159 */
-    color: var(--color-red-dark);
+    color: var(--color-gray);
     /* #A41414 */
 
     border-radius: 50%;
@@ -245,25 +232,8 @@
 
     font-size: 1.25rem;
 
-    color: var(--color-red-dark);
+    color: var(--color-white);
     /* #A41414 */
-}
-
-
-/* =========================================================
-   TEXTO DA OPÇÃO
-========================================================= */
-
-.opcao p {
-    max-width: 240px;
-
-    margin: 0;
-
-    font-size: 0.95rem;
-    line-height: 1.45;
-
-    color: var(--color-gray);
-    /* #565F5D */
 }
 
 
@@ -277,13 +247,13 @@
 
     margin-top: 1rem;
 
-    border: 2px solid var(--color-red-dark);
+    border: 2px solid var(--color-white);
     /* #A41414 */
     border-radius: 2rem;
 
-    background-color: var(--color-red-dark);
+    background-color: var(--color-white);
     /* #A41414 */
-    color: var(--color-white);
+    color: var(--color-black);
     /* #FFFFFF */
 
     font-size: 0.9rem;
@@ -299,9 +269,9 @@
 
 
 .opcao button:hover {
-    background-color: var(--color-red);
+    background-color: var(--color-yellou);
     /* #CC2C2B */
-    border-color: var(--color-red);
+    border-color: var(--color-yellou);
     /* #CC2C2B */
 
     transform: translateY(-2px);
@@ -312,12 +282,12 @@
 ========================================================= */
 
 #cachorro-cima {
-    top: -142px;
+    top: -142.3px;
     left: 6px;
     position: absolute;
     height: clamp(120px, 14vw, 196px);
     z-index: 5;
-    filter: drop-shadow(0 2px 8px rgba(164, 20, 20, 0.35));
+    filter: drop-shadow(0 2px 8px rgba(43, 43, 43, 0.35));
 }
 
 
@@ -337,53 +307,6 @@
 #texto-continuacao {
     z-index: 4;
 }
-
-#estrela-fundo {
-    position: absolute;
-    height: clamp(55px, 7vw, 100px);
-    top: -158px;
-    left: -96px;
-    z-index: 1;
-}
-
-#osso-fundo {
-    position: absolute;
-    z-index: 1;
-    right: -248px;
-    top: 136px;
-    ;
-    height: clamp(80px, 10vw, 208px);
-    bottom: 3%;
-
-}
-
-
-#patas-fundo {
-    position: absolute;
-    z-index: 1;
-    left: -225px;
-    top: 0;
-    height: clamp(90px, 12vw, 212px);
-}
-
-
-#fundo-opcao {
-    left: 0;
-    top: 0;
-    height: 15rem;
-    position: absolute;
-    border-radius: 20px;
-}
-
-
-#fundo-opcao-baixo {
-    right: 0;
-    top: 106px;
-    height: 15rem;
-    position: absolute;
-    border-radius: 20px;
-}
-
 
 .img-opcao {
     height: 3rem;

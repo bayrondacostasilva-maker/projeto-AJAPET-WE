@@ -1,81 +1,8 @@
 /* =====================================================
-   RESET
-===================================================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: "Arial", "Helvetica", sans-serif;
-    background: #f8eee4;
-    color: #111111;
-}
-
-
-/* =====================================================
-   PÁGINA
-===================================================== */
-
-.pagina {
-    min-height: 100vh;
-    background: #f8eee4;
-}
-
-
-/* =====================================================
-   HEADER
-===================================================== */
-
-header {
-    height: 69px;
-    padding: 0 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    border-bottom: 1px solid #e7d5c6;
-
-    background: #f8eee4;
-}
-
-.logo {
-    font-size: 29px;
-    font-weight: 900;
-    color: #a90012;
-
-    text-transform: uppercase;
-    letter-spacing: -1px;
-}
-
-.header-text {
-    font-size: 15px;
-    color: #66605d;
-
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-
-/* =====================================================
    CONTAINER
 ===================================================== */
 
-.container {
-    width: 100%;
-    max-width: 1100px;
 
-    margin: 0 auto;
-
-    padding: 60px 15px 90px;
-}
 
 
 /* =====================================================

@@ -50,8 +50,8 @@ body {
     position: absolute;
     width: 50%;
     height: 50%;
-    left: -3%;
-    top: 15%
+    left: 7%;
+    top: 26%;
 }
 
 h1 {
@@ -260,7 +260,7 @@ p {
 
 .opcao button:hover {
     background-color: var(--color-yellou);
-   
+
     transform: translateY(-2px);
 }
 

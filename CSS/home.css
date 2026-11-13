@@ -6,6 +6,7 @@ body {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
+    /*Esconde tudo que passa da tela no eixo orisontal  */
     background-color: var(--color-black);
 }
 
@@ -234,18 +235,10 @@ p {
 .opcao button {
     width: 130px;
     height: 2.5rem;
-
     margin-top: 1rem;
-
-    border: 2px solid var(--color-white);
-    /* #A41414 */
     border-radius: 2rem;
-
     background-color: var(--color-white);
-    /* #A41414 */
     color: var(--color-black);
-    /* #FFFFFF */
-
     font-size: 0.9rem;
     font-weight: bold;
 

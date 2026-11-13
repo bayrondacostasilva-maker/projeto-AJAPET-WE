@@ -20,7 +20,7 @@ body {
 
 .inicio h1 {
     font-size: 42px;
-    color: #f50c04;
+    color: #030303;
     margin-bottom: 15px;
 }
 
@@ -28,14 +28,14 @@ body {
     max-width: 700px;
     margin: 0 auto;
     font-size: 18px;
-    color: #555;
+    color: #242020;
 }
 
 .botao {
     display: inline-block;
     margin-top: 25px;
     padding: 12px 25px;
-    background-color: #f12005;
+    background-color: var(--color-black);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -44,7 +44,7 @@ body {
 }
 
 .botao:hover {
-    background-color: #c90d05;
+    background-color: #353333;
     transform: translateY(-2px);
 }
 
@@ -64,13 +64,13 @@ main {
 }
 
 .titulo h2 {
-    color: #fa0606;
+    color: #060606;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
 .titulo p {
-    color: #666;
+    color: #161515;
 }
 
 /* =========================
@@ -97,13 +97,13 @@ main {
 }
 
 .card h3 {
-    color: #fc0303;
+    color: #000000;
     font-size: 22px;
     margin-bottom: 10px;
 }
 
 .card p {
-    color: #555;
+    color: #1a1818;
 }
 
 /* =========================
@@ -113,7 +113,7 @@ main {
 .responsabilidade {
     margin-top: 60px;
     padding: 40px;
-    background-color: #f30606;
+    background-color: #000000;
     color: white;
     border-radius: 15px;
     text-align: center;

@@ -2,7 +2,6 @@
 
 /* =========================
    RESET E CORES
-   (arquivo independente, não depende de style.css)
 ========================= */
 
 * {
@@ -11,23 +10,25 @@
 }
 
 :root {
-    --red-dark: #7F1515;
-    --red: #B91C1C;
-    --yellow: #f4c95d;
+    --color-red-dark: #7F1515;
+    --color-red: #B91C1C;
 
-    --black: #111111;
-    --gray-dark: #333333;
-    --gray: #666666;
-    --gray-light: #F2F2F2;
+    --color-black: #000000;
+    --color-gray-dark: #333333;
+    --color-gray: #666666;
+    --color-grey-escuro: #141212;
+    --color-gray-light: #F2F2F2;
 
-    --white: #FFFFFF;
-    --white-marrom: #f8eee5;
+    --color-white: #FFFFFF;
+    --color-white-marrom: #F8EEE5;
+
+    --color-yellou: #F4C95D;
 }
 
 body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    background: var(--gray-light);
-    color: var(--black);
+    background: var(--color-black);
+    color: var(--color-white);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -54,15 +55,15 @@ main {
 .questionario {
     width: 100%;
     max-width: 1250px;
-    background: var(--white);
+    background: var(--color-grey-escuro);
     padding: 40px;
     border-radius: 20px;
-    border: 2.5px solid var(--red-dark);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+    border: 2.5px solid var(--color-yellou);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.50);
 }
 
 .questionario h2 {
-    color: var(--red-dark);
+    color: var(--color-white);
     text-align: center;
     font-size: 50px;
     margin-bottom: 10px;
@@ -70,7 +71,7 @@ main {
 
 .questionario > p {
     text-align: center;
-    color: var(--gray);
+    color: var(--color-white-marrom);
     margin-bottom: 40px;
     line-height: 1.6;
 }
@@ -87,7 +88,7 @@ main {
 
 #form-questionario > label {
     font-weight: bold;
-    color: var(--black);
+    color: var(--color-white);
     margin-top: 10px;
 }
 
@@ -101,10 +102,10 @@ select,
 textarea {
     width: 100%;
     padding: 13px 15px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-gray);
     border-radius: 9px;
-    background: var(--gray-light);
-    color: var(--black);
+    background: var(--color-gray-dark);
+    color: var(--color-white);
     font-size: 16px;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     outline: none;
@@ -115,9 +116,9 @@ input[type="text"]:focus,
 input[type="number"]:focus,
 select:focus,
 textarea:focus {
-    border-color: var(--red-dark);
-    box-shadow: 0 0 0 3px rgba(127, 21, 21, 0.15);
-    background: var(--white);
+    border-color: var(--color-yellou);
+    box-shadow: 0 0 0 3px rgba(244, 201, 93, 0.20);
+    background: var(--color-black);
 }
 
 textarea {
@@ -130,15 +131,15 @@ textarea {
 ========================= */
 
 fieldset {
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-gray-dark);
     border-radius: 10px;
     padding: 18px;
     margin-top: 15px;
-    background: var(--gray-light);
+    background: var(--color-black);
 }
 
 fieldset legend {
-    color: var(--red-dark);
+    color: var(--color-yellou);
     font-weight: bold;
     padding: 0 8px;
 }
@@ -154,7 +155,7 @@ fieldset label {
 }
 
 input[type="radio"] {
-    accent-color: var(--red-dark);
+    accent-color: var(--color-yellou);
     width: 17px;
     height: 17px;
 }
@@ -168,10 +169,10 @@ input[type="radio"] {
     height: auto;
     margin-top: 25px;
     padding: 15px;
-    border: 2px solid var(--red-dark);
+    border: 2px solid var(--color-white);
     border-radius: 8px;
-    background: var(--red-dark);
-    color: var(--white);
+    background: var(--color-white);
+    color: var(--color-black);
     font-size: 17px;
     font-weight: bold;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -180,10 +181,11 @@ input[type="radio"] {
 }
 
 .questionario button[type="submit"]:hover {
-    background: var(--white);
-    color: var(--red-dark);
+    background: var(--color-yellou);
+    border-color: var(--color-yellou);
+    color: var(--color-black);
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(127, 21, 21, 0.20);
+    box-shadow: 0 6px 15px rgba(244, 201, 93, 0.25);
 }
 
 .questionario button[type="submit"]:active {
@@ -198,14 +200,14 @@ input[type="radio"] {
     margin-top: 30px;
     padding: 20px;
     border-radius: 12px;
-    background: var(--white-marrom);
-    border-left: 5px solid var(--red-dark);
-    color: var(--black);
+    background: var(--color-white-marrom);
+    border-left: 5px solid var(--color-yellou);
+    color: var(--color-black);
     line-height: 1.6;
 }
 
 .resultado h3 {
-    color: var(--red-dark);
+    color: var(--color-red-dark);
     margin-bottom: 10px;
 }
 
@@ -214,8 +216,8 @@ input[type="radio"] {
 ========================= */
 
 footer {
-    background-color: var(--red);
-    color: var(--white);
+    background-color: var(--color-grey-escuro);
+    color: var(--color-white);
     min-height: 8rem;
     display: flex;
     justify-content: space-between;

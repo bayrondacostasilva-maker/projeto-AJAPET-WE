@@ -40,14 +40,6 @@ img {
 }
 
 
-/* =====================================================
-   CABEÇALHO
-===================================================== */
-
-.header {
-    background: var(--preto);
-    color: var(--branco);
-}
 
 
 /* =====================================================
@@ -413,36 +405,4 @@ img {
 }
 
 
-/* =====================================================
-   RODAPÉ
-===================================================== */
-
-.footer {
-    width: 100%;
-    background: var(--preto);
-    color: var(--branco);
-    border-top: 1px solid var(--dourado);
-}
-
-.footer h2,
-.footer h3 {
-    color: var(--branco);
-}
-
-.footer p {
-    color: var(--cinza);
-}
-
-.footer a {
-    color: var(--branco);
-}
-
-.footer a:hover {
-    color: var(--dourado);
-}
-
-.footer-bottom {
-    border-top: 1px solid var(--borda);
-    color: var(--cinza);
-}
-
+        

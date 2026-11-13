@@ -58,7 +58,7 @@ main {
     background: var(--color-grey-escuro);
     padding: 40px;
     border-radius: 20px;
-    border: 2.5px solid var(--color-yellou);
+    border: 2.5px solid var(--color-white);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.50);
 }
 

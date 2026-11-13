@@ -7,19 +7,19 @@
 O **AJ.APET** é uma plataforma web intuitiva desenvolvida com o objetivo de compartilhar informações essenciais sobre o cuidado e a proteção animal. Oferecemos conteúdos práticos e acessíveis sobre alimentação, saúde preventiva, higiene e convivência segura. 
 --- 
 ## ✨ Funcionalidades 
-  🏠 **Página Inicial:** Apresentação da proposta do projeto e acesso rápido às seções.
-  🐶**Guia de Cuidados:** Orientação sobre alimentação equilibrada, higiene, exercícios e segurança. 
-  📝**Questionário do Pet:** Formulário interativo para registrar informações essenciais do animal. 
-  ❤️**Adoção Responsável:** Conteúdos educativos e incentivo à adoção consciente.
-👥**Sobre Nós:** Informações sobre a equipe de desenvolvimento e os objetivos do projeto. 
+  🏠**Página Inicial:** Apresentação da proposta do projeto e acesso rápido às seções.<br>
+  🐶**Guia de Cuidados:** Orientação sobre alimentação equilibrada, higiene, exercícios e segurança. <br>
+  📝**Questionário do Pet:** Formulário interativo para registrar informações essenciais do animal. <br>
+  ❤️**Adoção Responsável:** Conteúdos educativos e incentivo à adoção consciente.<br>
+  👥**Sobre Nós:** Informações sobre a equipe de desenvolvimento e os objetivos do projeto.
 
 --- 
 
 ## 🛠️ Tecnologias Utilizadas 
-  **HTML5** — Estruturação do conteúdo das páginas 
-  **CSS3** — Estilização customizada e responsividade 
-  **Tailwind CSS** — Framework de estilos - 
-  **Font Awesome** — Biblioteca de ícones visuais 
+  **HTML5** — Estruturação do conteúdo das páginas<br> 
+  **CSS3** — Estilização customizada e responsividade<br> 
+  **Tailwind CSS** — Framework de estilos<br>
+  **Font Awesome** — Biblioteca de ícones visuais<br> 
   **Git &amp; GitHub** — Controle de versão e hospedagem do código
 
 --- 

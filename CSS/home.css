@@ -5,17 +5,14 @@ html,
 body {
     width: 100%;
     margin: 0;
-<<<<<<< HEAD
     overflow-x: hidden;
     /*Esconde tudo que passa da tela no eixo orisontal  */
-=======
-    overflow-x: hidden; /*Esconde tudo que passa da tela no eixo orisontal  */
->>>>>>> f0a8783cdaae7493a2b38556ddc5c9ca1c6b888f
     background-color: var(--color-black);
 }
 
 * {
     box-sizing: border-box;
+
 }
 
 .centersection {

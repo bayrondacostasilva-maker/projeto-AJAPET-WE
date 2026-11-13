@@ -1,16 +1,64 @@
 
 /* =====================================================
+   PALETA DE CORES
+===================================================== */
+
+:root {
+    --preto: #080605;
+    --card: #15100E;
+    --card-secundario: #211B18;
+    --vermelho: #B90020;
+    --vermelho-hover: #D00028;
+    --dourado: #F2C14E;
+    --branco: #F7F1EB;
+    --cinza: #B9ADA5;
+    --borda: #302925;
+}
+
+
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    color: var(--branco);
+}
+
+main {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.header {
+    background: var(--preto);
+    color: var(--branco);
+    border-bottom: 1px solid var(--dourado);
+}
+
+
+/* =====================================================
    HERO GRID
 ===================================================== */
 
 .hero-grid {
-    display: grid;
-
-    grid-template-columns: 2fr 1fr;
-
     gap: 30px;
-
-    align-items: stretch;   
+    align-items: stretch;
+    margin-bottom: 30px;
 }
 
 
@@ -19,23 +67,19 @@
 ===================================================== */
 
 .hero-image {
-    height: 430px;
-
+    width: 100%;
     overflow: hidden;
-
     border-radius: 20px;
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
-
+    object-position: center;
     transition: transform 0.5s ease;
-}   
+}
 
 .hero-image:hover img {
     transform: scale(1.03);
@@ -47,14 +91,10 @@
 ===================================================== */
 
 .objective {
-    min-height: 430px;
-
     padding: 40px;
-
-    background: #ad0013;
-
-    color: white;
-
+    background: var(--vermelho);
+    color: var(--branco);
+    border-bottom: 4px solid var(--dourado);
     border-radius: 20px;
 
     display: flex;
@@ -64,32 +104,23 @@
 
 .small-title {
     margin-bottom: 30px;
-
     font-size: 14px;
     font-weight: bold;
-
     text-transform: uppercase;
     letter-spacing: 1.5px;
-
-    color: #e7c5c7;
+    color: var(--branco);
 }
 
 .objective h2 {
-    max-width: 200px;
-
+    max-width: 250px;
     margin-bottom: 25px;
-
-    font-size: 38px;
     line-height: 1.1;
-
-    color: white;
+    color: var(--branco);
 }
 
 .objective p {
-    font-size: 19px;
     line-height: 1.65;
-
-    color: #fff5f5;
+    color: var(--branco);
 }
 
 
@@ -98,13 +129,9 @@
 ===================================================== */
 
 .info-grid {
-    display: grid;
-
-    grid-template-columns: 1.35fr 1fr;
-
     gap: 30px;
-
     margin-bottom: 30px;
+    align-items: stretch;
 }
 
 
@@ -113,11 +140,37 @@
 ===================================================== */
 
 .card {
+    min-width: 0;
     border-radius: 20px;
+    border: 1px solid var(--borda);
+    background: var(--card);
+}
 
-    padding: 40px;
+.card-title {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--branco);
+}
 
-    border: 1px solid #e5d9d0;
+.card-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 6px;
+    height: 25px;
+    background: var(--dourado);
+    border-radius: 5px;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--cinza);
 }
 
 
@@ -126,28 +179,11 @@
 ===================================================== */
 
 .quem-somos {
-    background: #ffffff;
+    background: var(--card);
 }
 
-.card-title {
-    position: relative;
-
-    margin-bottom: 30px;
-    padding-left: 25px;
-
-    font-size: 25px;
-    font-weight: 900;
-
-    text-transform: uppercase;
-
-    color: #111111;
-}
-
-.card p {
-    font-size: 18px;
-    line-height: 1.65;
-
-    color: #5f5a57;
+.quem-somos p {
+    color: var(--cinza);
 }
 
 
@@ -158,48 +194,42 @@
 .dev-title {
     margin-top: 40px;
     margin-bottom: 25px;
-
     font-size: 14px;
     font-weight: bold;
-
     letter-spacing: 2px;
-
     text-transform: uppercase;
-
-    color: #ad0013;
+    color: #FF4545;
 }
 
 .devs {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    column-gap: 45px;
-    row-gap: 25px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .dev {
+    min-width: 0;
     display: flex;
     flex-direction: column;
-
     gap: 5px;
+    padding: 18px;
+    border-radius: 25px;
+    background: var(--card-secundario);
 }
 
 .dev strong {
     font-size: 16px;
-    color: #111111;
+    color: var(--branco);
+    overflow-wrap: anywhere;
 }
 
 .github {
     font-size: 14px;
-    color: #ad0013;
+    color: #FF4545;
 }
 
 .github a {
-    color: #ad0013;
-
+    color: #FF4545;
     text-decoration: none;
-
     font-weight: 500;
 }
 
@@ -213,48 +243,41 @@
 ===================================================== */
 
 .como-funciona {
-    background: #111111;
-
-    border: none;
-
-    color: white;
+    background: #050403;
+    border: 1px solid #211B18;
+    color: var(--branco);
 }
 
 .como-funciona .card-title {
-    color: white;
+    color: var(--branco);
 }
 
 .como-funciona .card-title::before {
-    background: #ff4a4a;
+    background: var(--dourado);
 }
 
 .steps {
     display: flex;
     flex-direction: column;
-
     gap: 30px;
-
     margin-top: 35px;
 }
 
 .step {
     display: grid;
-
-    grid-template-columns: 45px 1fr;
-
-    gap: 0;
-
     align-items: start;
-
-    color: #cfc9c6;
-
-    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #211B18;
+    color: var(--cinza);
     line-height: 1.55;
 }
 
-.step-number {
-    color: #ff4545;
+.step:last-child {
+    border-bottom: none;
+}
 
+.step-number {
+    color: #FF4545;
     font-size: 19px;
     font-weight: 900;
 }
@@ -265,46 +288,28 @@
 ===================================================== */
 
 .warning {
-    display: grid;
-
-    grid-template-columns: 135px 1fr;
-
     align-items: center;
-
     gap: 20px;
-
-    padding: 35px 40px;
-
     margin-bottom: 30px;
-
-    background: #f9e7c6;
-
-    border: 1px solid #efc978;
-
+    background: #100C09;
+    border: 1px solid #806014;
     border-radius: 20px;
 }
 
 .warning strong {
     display: inline-block;
-
     width: fit-content;
-
     padding: 7px 15px;
-
-    background: #f0c44e;
-
+    background: var(--dourado);
     border-radius: 5px;
-
     font-size: 14px;
-
-    color: #161616;
+    color: var(--preto);
 }
 
 .warning p {
     font-size: 16px;
     line-height: 1.65;
-
-    color: #49433e;
+    color: var(--branco);
 }
 
 
@@ -313,15 +318,10 @@
 ===================================================== */
 
 .questionnaire-grid {
-    display: grid;
-
-    grid-template-columns: 1.7fr 1fr;
-
-    grid-template-rows: 340px 160px;
-
     gap: 30px;
-
     margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: stretch;
 }
 
 
@@ -330,13 +330,10 @@
 ===================================================== */
 
 .questionnaire {
-    background: white;
-
-    border: 1px solid #ded6d0;
-
+    min-width: 0;
+    background: var(--card);
+    border: 1px solid var(--borda);
     border-radius: 20px;
-
-    padding: 40px;
 
     display: flex;
     flex-direction: column;
@@ -347,35 +344,25 @@
 
 .questionnaire-label {
     margin-bottom: 15px;
-
     font-size: 14px;
     font-weight: bold;
-
     letter-spacing: 2px;
-
-    color: #ad0013;
+    color: #FF4545;
 }
 
 .questionnaire h2 {
     max-width: 400px;
-
     margin-bottom: 15px;
-
-    font-size: 34px;
     line-height: 1.1;
-
     font-weight: 900;
-
-    color: #111111;
+    color: var(--branco);
 }
 
 .questionnaire p {
     max-width: 440px;
-
     font-size: 17px;
     line-height: 1.6;
-
-    color: #68615d;
+    color: var(--cinza);
 }
 
 
@@ -385,23 +372,20 @@
 
 .questionnaire-button {
     display: inline-block;
-
     width: fit-content;
-
-    padding: 12px 0;
-
-    color: #ad0013;
-
+    padding: 15px 25px;
+    background: var(--vermelho);
+    color: var(--branco);
+    border-radius: 30px;
     font-size: 17px;
     font-weight: bold;
-
     text-decoration: none;
-
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .questionnaire-button:hover {
-    transform: translateX(5px);
+    background: var(--vermelho-hover);
+    transform: translateY(-3px);
 }
 
 
@@ -410,25 +394,56 @@
 ===================================================== */
 
 .cat-image {
-    grid-column: 2;
-    grid-row: 1;
-
+    min-width: 0;
     overflow: hidden;
-
+    border: 1px solid var(--borda);
     border-radius: 20px;
 }
 
 .cat-image img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
-
+    object-position: center;
     transition: transform 0.5s ease;
 }
 
 .cat-image:hover img {
     transform: scale(1.04);
 }
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+.footer {
+    width: 100%;
+    background: var(--preto);
+    color: var(--branco);
+    border-top: 1px solid var(--dourado);
+}
+
+.footer h2,
+.footer h3 {
+    color: var(--branco);
+}
+
+.footer p {
+    color: var(--cinza);
+}
+
+.footer a {
+    color: var(--branco);
+}
+
+.footer a:hover {
+    color: var(--dourado);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--borda);
+    color: var(--cinza);
+}
+

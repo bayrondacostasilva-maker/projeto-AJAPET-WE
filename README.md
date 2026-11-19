@@ -4,7 +4,9 @@
 --- 
 
 ## 📌 Sobre o Projeto 
+
 O **AJ.APET** é uma plataforma web intuitiva desenvolvida com o objetivo de compartilhar informações essenciais sobre o cuidado e a proteção animal. Oferecemos conteúdos práticos e acessíveis sobre alimentação, saúde preventiva, higiene e convivência segura. 
+
 --- 
 ## ✨ Funcionalidades 
   🏠**Página Inicial:** Apresentação da proposta do projeto e acesso rápido às seções.<br>
